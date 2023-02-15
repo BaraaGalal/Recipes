@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Shopping';
+
+  loadedData = 'recipe';
+
+  onNavigate(selector: string) {
+    this.loadedData = selector;
+  }
 }
